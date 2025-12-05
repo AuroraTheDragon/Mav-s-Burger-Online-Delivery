@@ -12,7 +12,7 @@ body {
     padding-top: 70px;
 }
 
-/*==================== HEADER & NAV ====================*/
+/*<--- Header and Nav Area --->*/
 header {
   position: fixed;
   top: 0;
@@ -30,7 +30,7 @@ header {
   gap: 10px;
 }
 
-/*Logo and Title*/
+/*<--- Title and Logo --->*/
 .title-with-logo {
   display: flex;
   align-items: center;
@@ -71,7 +71,7 @@ header nav a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/*Responsiveness*/
+/*<--- Responsive Code --->*/
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -107,7 +107,7 @@ header nav a:hover {
   }
 }
 
-/*==================== HERO BANNER ====================*/
+/*<--- Hero Banner --->*/
 .front-banner {
     position: relative;
     height: calc(100vh - 80px);
@@ -166,20 +166,26 @@ header nav a:hover {
     box-shadow: 0 15px 35px rgba(0,0,0,0.4);
 }
 
-/*--- Subtle floating animation for the logo ---*/
+/*<--- Subtle Logo Animation --->*/
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
 }
 
-/*--- Mobile adjustments --- */
+/*<--- Mobile Adjustments --->*/
 @media (max-width: 768px) {
     .hero-logo { width: 260px; }
     .hero-text { font-size: 1.2rem; }
     .order-btn { padding: 14px 32px; font-size: 1.2rem; }
 }
 
-/*==================== CAROUSEL ====================*/
+/*<--- Carousel --->*/
+.center_align { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
 .carousel {
     width: 90%;
     max-width: 1200px;
@@ -242,7 +248,7 @@ header nav a:hover {
     letter-spacing: 1px;
 }
 
-/*Smooth 5-slide animation*/
+/*<--- 5 Slides Animation --->*/
 @keyframes glide {
     0%    { transform: translateX(0%); }
     16%   { transform: translateX(0%); }
@@ -257,7 +263,7 @@ header nav a:hover {
     100%  { transform: translateX(0%); }
 }
 
-/*==================== INFO SECTIONS ====================*/
+/*<--- Info Section --->*/
 .page { 
     display: flex; 
     flex-wrap: wrap; 
@@ -301,8 +307,7 @@ header nav a:hover {
     margin-bottom: 25px; 
 }
 
-.left_text_1 button,
-.right_text_2 button { 
+.left_text_1 button, .right_text_2 button { 
     background: white; 
     color: #e64a19; 
     border: none; 
@@ -324,7 +329,7 @@ header nav a:hover {
     object-fit: cover; 
 }
 
-/*==================== MENU PAGE ====================*/
+/*<--- Menu Page --->*/
 .menu-list { 
     display: grid; 
     grid-template-columns: 1fr; 
@@ -419,7 +424,7 @@ header nav a:hover {
     background: #e64a19; 
 }
 
-/*==================== CART PAGE ====================*/
+/*<--- Cart Page --->*/
 .cart-container { 
     max-width: 800px; 
     margin: 40px auto; 
@@ -481,7 +486,7 @@ header nav a:hover {
     background: #e64a19; 
 }
 
-/*==================== FOOTER ====================*/
+/*<--- Footer --->*/
 footer { 
     background: #b43e1b; 
     color: white; 
@@ -489,11 +494,4 @@ footer {
     padding: 20px; 
     margin-top: 50px; 
     font-size: 0.9rem; 
-}
-
-/*==================== UTILITIES ====================*/
-.center_align { 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
 }
